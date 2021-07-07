@@ -5,8 +5,8 @@ var Schema = mongoose.Schema;
 var AddressSchema = new Schema(
   {
     village: String,
-    city: { type: String, lowercase: true },
-    state: { type: String, lowercase: true },
+    city: { type: String, required: true },
+    state: { type: String, required: true },
     pin: Number,
     user: Schema.Types.ObjectId,
   },
