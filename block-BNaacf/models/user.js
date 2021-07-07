@@ -9,4 +9,3 @@ var userSchema = new Schema({
   favourites: [String],
   marks: [Number],
 });
-var AddressSchema = new Schema({});
