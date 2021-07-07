@@ -13,7 +13,7 @@ var userSchema = new Schema(
     createdAt: { type: Date, default: Date.now },
     favourites: [String],
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
 var User = mongoose.model('User', userSchema);
